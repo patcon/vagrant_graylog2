@@ -10,9 +10,9 @@ for demonstration purposes or as a starting point for your own installation.
 Build a baseline Ubuntu machine and import it as a Vagrant box
 
     gem install vagrant veewee
-    vagrant basebox define graylog2 ubuntu-11.10-server-amd64-ruby192
+    vagrant basebox define 'graylog2' 'ubuntu-11.10-server-amd64-ruby192'
     vagrant basebox build 'graylog2'
-    vagrant basebox export graylog2
+    vagrant basebox export 'graylog2'
     vagrant box add 'graylog2' 'graylog2.box'
 
 Clone this repository
@@ -38,6 +38,6 @@ When chef finishes open your browser
 
     http://localhost:8081
 
-Now, you can create your first user in the webinterface.
+Now, you can create your first user in the webinterface.</br>
 To get log messages into the Graylog2 server just redirect your syslog to UDP localhost:1514.
 
