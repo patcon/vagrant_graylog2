@@ -8,6 +8,7 @@ for demonstration purposes or as a starting point for your own installation.
 
 ## Installation
 Build a baseline Ubuntu machine and import it as a Vagrant box
+
     gem install vagrant veewee
     vagrant basebox define graylog2 ubuntu-11.10-server-amd64-ruby192
     vagrant basebox build 'graylog2'
@@ -15,9 +16,11 @@ Build a baseline Ubuntu machine and import it as a Vagrant box
     vagrant box add 'graylog2' 'graylog2.box'
 
 Clone this repository
+
     git clone https://github.com/mariussturm/vagrant_graylog2.git
 
 Get additional Opscode cookbooks
+
     cd vagrant_graylog2/cookbooks
     git clone https://github.com/opscode-cookbooks/apt.git
     git clone https://github.com/opscode-cookbooks/build-essential.git
@@ -28,9 +31,11 @@ Get additional Opscode cookbooks
     cd ..
 
 Startup the virtual machine and let Chef do the rest
+
     vagrant up
 
 When chef finishes open your browser 
+
     http://localhost:8081
 
 Now, you can create your first user in the webinterface.
