@@ -1,0 +1,10 @@
+server {
+  server_name <%= node['graylog2']['web_interface']['server_alias'] %>;
+  listen <%= node['graylog2']['web_interface']['listen_port'] %>;
+  root <%= "#{node['graylog2']['prefix']}/graylog2-web-interface-#{node['graylog2']['web_interface']['version']}/public" %>;
+
+  passenger_enabled on;
+  rails_spawn_method smart;
+  rails_env <%= node['graylog2']['web_interface']['environment'] %>;
+}
+
