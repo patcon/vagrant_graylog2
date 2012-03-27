@@ -1,6 +1,8 @@
 ## Installation
 
     $ gem install vagrant veewee
+    $ git clone https://github.com/mariussturm/vagrant_graylog2.git
+    $ cd vagrant_graylog2
     $
     $ vagrant basebox define graylog2 ubuntu-11.10-server-amd64-ruby192
     $ vagrant basebox build 'graylog2'
