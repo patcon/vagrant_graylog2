@@ -19,4 +19,4 @@
     $ cd ..
     $ 
     $ vagrant up
-
+    $ http://localhost:8081
