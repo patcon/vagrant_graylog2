@@ -38,6 +38,6 @@ When chef finishes open your browser
 
     http://localhost:8081
 
-Now, you can create your first user in the webinterface.</br>
+Now, you can create your first user in the webinterface.<br>
 To get log messages into the Graylog2 server just redirect your syslog to UDP localhost:1514.
 
