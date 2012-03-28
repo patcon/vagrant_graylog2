@@ -3,11 +3,12 @@ This Vagrant project builds a complete Graylog2 installation that can be used
 for demonstration purposes or as a starting point for your own installation.
 
 ## Requirements
-    VirtualBox 4.x (64bit)
+    VirtualBox 4.x
     ruby 1.9
 
 ## Installation
-Build a baseline Ubuntu machine and import it as a Vagrant box
+Build a baseline Ubuntu machine and import it as a Vagrant box. If you are on a 32bit system just
+use the 'ubuntu-11.10-server-i386' template.
 
     gem install vagrant veewee
     vagrant basebox define 'graylog2' 'ubuntu-11.10-server-amd64-ruby192'
@@ -36,7 +37,7 @@ Startup the virtual machine and let Chef do the rest
 
 When chef finishes open your browser 
 
-    http://localhost:8081
+    http://localhost:8080
 
 Now, you can create your first user in the webinterface.<br>
 To get log messages into the Graylog2 server just redirect your syslog to UDP localhost:1514.
