@@ -1,6 +1,6 @@
 # Setup nginx module
 
-nginx_configure_flags = node['nginx']['configure_flags']
+nginx_configure_flags = node[:nginx][:source][:default_configure_flags]
 nginx_configure_flags.delete_if { |item| item.match(/^--prefix/) }
 
 bash "set dynamic passenger config" do
