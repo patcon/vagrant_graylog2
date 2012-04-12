@@ -28,6 +28,7 @@ Get additional Opscode cookbooks
     git clone https://github.com/opscode-cookbooks/bluepill.git
     git clone https://github.com/opscode-cookbooks/java.git
     git clone https://github.com/opscode-cookbooks/nginx.git
+    git clone https://github.com/opscode-cookbooks/ohai.git
     git clone https://github.com/opscode-cookbooks/runit.git
     cd ..
 
@@ -40,5 +41,6 @@ When chef finishes open your browser
     http://localhost:8080
 
 Now, you can create your first user in the webinterface.<br>
-To get log messages into the Graylog2 server just redirect your syslog to UDP localhost:1514.
-
+To get log messages into the Graylog2 server just redirect your syslog to UDP localhost:1514 or
+have a look at https://github.com/papertrail/remote_syslog to send log messages from
+your host machine to the Graylog2 server.
