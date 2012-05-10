@@ -10,7 +10,7 @@ for demonstration purposes or as a starting point for your own installation.
 Build a baseline Ubuntu machine and import it as a Vagrant box. If you are on a 32bit system just
 use the 'ubuntu-11.10-server-i386' template.
 
-    gem install vagrant veewee
+    gem install vagrant veewee librarian
     vagrant basebox define 'graylog2' 'ubuntu-11.10-server-amd64-ruby192'
     vagrant basebox build 'graylog2'
     vagrant basebox export 'graylog2'
@@ -19,18 +19,11 @@ use the 'ubuntu-11.10-server-i386' template.
 Clone this repository
 
     git clone https://github.com/mariussturm/vagrant_graylog2.git
+    cd vagrant_graylog2
 
 Get additional Opscode cookbooks
 
-    cd vagrant_graylog2/cookbooks
-    git clone https://github.com/opscode-cookbooks/apt.git
-    git clone https://github.com/opscode-cookbooks/build-essential.git
-    git clone https://github.com/opscode-cookbooks/bluepill.git
-    git clone https://github.com/opscode-cookbooks/java.git
-    git clone https://github.com/opscode-cookbooks/nginx.git
-    git clone https://github.com/opscode-cookbooks/ohai.git
-    git clone https://github.com/opscode-cookbooks/runit.git
-    cd ..
+    librarian-chef install
 
 Startup the virtual machine and let Chef do the rest
 
