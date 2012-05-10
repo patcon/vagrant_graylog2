@@ -12,7 +12,7 @@ Vagrant::Config.run do |config|
   # Chef-solo provisioner
   config.vm.provision :chef_solo do |chef|
     chef.provisioning_path = "/srv/vagrant-chef"
-    chef.cookbooks_path = "cookbooks"
+    chef.cookbooks_path = ["cookbooks", "site_cookbooks"]
     chef.roles_path = "roles"
     chef.add_role "graylog2"
   end

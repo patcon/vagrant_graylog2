@@ -1,0 +1,24 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.4.2)
+    bluepill (1.0.4)
+    build-essential (1.0.0)
+    java (1.5.0)
+    nginx (0.101.2)
+      bluepill (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (~> 1.0.2)
+      runit (>= 0.0.0)
+    ohai (1.0.2)
+    runit (0.15.0)
+
+DEPENDENCIES
+  apt (= 1.4.2)
+  bluepill (= 1.0.4)
+  build-essential (= 1.0.0)
+  java (= 1.5.0)
+  nginx (= 0.101.2)
+  ohai (= 1.0.2)
+  runit (= 0.15.0)
+

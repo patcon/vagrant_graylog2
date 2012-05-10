@@ -1,0 +1,9 @@
+site "http://community.opscode.com/api/v1"
+
+cookbook "apt",             "1.4.2"
+cookbook "build-essential", "1.0.0"
+cookbook "bluepill",        "1.0.4"
+cookbook "java",            "1.5.0"
+cookbook "nginx",           "0.101.2"
+cookbook "ohai",            "1.0.2"
+cookbook "runit",           "0.15.0"
