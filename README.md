@@ -7,14 +7,10 @@ for demonstration purposes or as a starting point for your own installation.
     ruby 1.9
 
 ## Installation
-Build a baseline Ubuntu machine and import it as a Vagrant box. If you are on a 32bit system just
-use the 'ubuntu-11.10-server-i386' template.
+Import a Ubuntu 11.10 amd64 basebox
 
-    gem install vagrant veewee librarian
-    vagrant basebox define 'graylog2' 'ubuntu-11.10-server-amd64-ruby192'
-    vagrant basebox build 'graylog2'
-    vagrant basebox export 'graylog2'
-    vagrant box add 'graylog2' 'graylog2.box'
+    gem install vagrant librarian
+    vagrant box add graylog2 https://github.com/downloads/mariussturm/vagrant_graylog2/graylog2.box
 
 Clone this repository
 
