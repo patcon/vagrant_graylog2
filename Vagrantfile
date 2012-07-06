@@ -1,7 +1,8 @@
 Vagrant::Config.run do |config|
   # Basebox name
-  config.vm.box = "graylog2"
   config.vm.name = "graylog2"
+  config.vm.box = "graylog2"
+  config.vm.box_url = "https://github.com/downloads/mariussturm/vagrant_graylog2/graylog2.box"
 
   # Port forwards
   config.ssh.forward_agent = false
