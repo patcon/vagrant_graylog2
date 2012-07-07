@@ -13,6 +13,8 @@ bundle -v | grep "$BUNDLER_VERS" > /dev/null
 if [ "$?" -ne "0" ] ; then
   echo "Installing Bundler via Rubygems..."
   gem install bundler -v $BUNDLER_VERS --no-rdoc --no-ri
+  echo "Activating rubygems-bundler..." # Eff you, `bundle exec`
+  gem regenerate_binstubs
 fi
 
 # Run bundler if any gems not installed
@@ -20,6 +22,3 @@ if ! bundle check > /dev/null; then
   echo "Installing bundled gems via Bundler..."
   bundle install
 fi
-
-# activate rubygems-bundler (eff you, `bundle exec`)
-gem regenerate_binstubs
